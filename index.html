@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en" ng-app>
+<head>
+	<meta charset="UTF-8">
+	<title>Angulat-book-store</title>
+	
+	<link rel="stylesheet" href="app/css/bootstrap.css"></link>
+	<link rel="stylesheet" href="app/css/styles.css"></link>
+
+	<script src="app/lib/angular.js"></script>
+	<script src="app/lib/underscore.js"></script>
+	<script src="app/js/controllers.js"></script>
+	<script src="app/js/BookListCtrl.js"></script>
+</head>
+<body>
+<!-- 	<div ng-controller="BookListCtrl">
+		<div id="thumbwrapper">
+			<ul id="thumblist">
+			    <li ng-repeat="book in books">
+						<img ng-src="app/{{book.coverphoto}}" alt="{{book.author}}">
+			    </li>
+			</ul>	
+		</div>	
+	</div>
+ -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="#">Angular-book-store</a>
+          <div class="nav-collapse collapse">
+<!--             <p class="navbar-text pull-right">
+              Logged in as <a href="#" class="navbar-link">Username</a>
+            </p>
+ -->            <ul class="nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+ 	<div class="container-fluid" ng-controller="BookListCtrl">
+  	<div class="row-fluid">
+    	<div class="span3">
+	      <div id="thumbwrapper">
+          <ul id="thumblist">
+				    <li ng-repeat="book in books | filter:categories" ng-click="setCurrentBook(book)">
+							<img ng-src="app/{{book.coverphoto}}" alt="{{book.author}}" >
+				    </li>          	
+           </ul>
+        </div>
+			</div>
+			<div class="span9">
+				<div id="header">
+					<select ng-model="categories" ng-options="category for category in imageCategories">
+						<option value="">all</option>
+					</select>
+				</div>
+				<div id="albumImage">
+					<h3>{{currentBook.title}}</h3>
+					<img ng-src="app/{{currentBook.coverphoto}}">
+				</div>
+			</div>
+		</div>
+	</div>	
+</body>
+</html>

@@ -1,0 +1,44 @@
+[
+	{
+		"isbn": "0596517742",
+		"title": "Javascript Good parts",
+		"author": "Douglas Corckford",
+		"coverphoto": "img/goodparts.gif",
+		"category": "Javascript"
+	},
+	{
+		"isbn": "0596806752",
+		"title": "Javascript Patters",
+		"author": "Stoyan Stefanov",
+		"coverphoto": "img/patterns-stoyan.jpg",
+		"category": "Javascript"
+	},
+	{
+		"isbn": "0596806752",
+		"title": "High Performance JavaScript",
+		"author": "Nicholas C. Zakas",
+		"coverphoto": "img/highperformance-nicholas.jpg",
+		"category": "Javascript"
+	},
+	{
+		"isbn": "B005ISQ7JM",
+		"title": "What Is HTML5",
+		"author": "Brett McLaughlin",
+		"coverphoto": "img/whatishtml5-brett.jpg",
+		"category": "HTML5"
+	},
+	{
+		"isbn": "1430239603",
+		"title": "The Definitive Guide to HTML5",
+		"author": "Adam Freeman",
+		"coverphoto": "img/definitiveguide2html5-adam.jpg",
+		"category": "HTML5"
+	},
+	{
+		"isbn": "0596806752",
+		"title": "The Book of CSS3: A Developer's Guide to the Future of Web Design",
+		"author": "Peter Gasston",
+		"coverphoto": "img/bookofcss3-peter.jpg",
+		"category": "CSS3"
+	}
+]
